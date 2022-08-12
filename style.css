@@ -196,8 +196,9 @@ margin-left: 10px;
     background: #333;
 
 }
-.users .search button .active i::before{
+.users .search button.active i::before{
     content: "\f00d";
+    display: block;
 }
 .users-list{
     max-height: 350px;
@@ -255,7 +256,7 @@ margin-left: 10px;
     margin: 15px 0;
 }
 .chat-box{
-    height: 500px;
+    height: 400px;
     background: #f7f7f7;
     padding: 10px 30px 20px 30px;
     box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),

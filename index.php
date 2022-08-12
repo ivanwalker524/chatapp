@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realtime Chat App | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c98faec581.js" crossorigin="anonymous"></script>
-</head>
+<?php
+    session_start();
+    if(isset($_SESSION['unique_id'])){//if user is logged in
+    header("location: users.php");
+    }
+?>
+<? 
+include_once "php/header.php";
+?>
 <body>
     <div class="wrapper">
         <section class="form signup">
@@ -31,7 +30,7 @@
                     <div class="field input">
                         <label for="">Password</label>
                         <input type="password" name="password" placeholder="Enter new password" required>
-                        <i class="fas fa-eye"></i>
+                        <i><?php include "vectors/eye.svg"; ?></i>
                     </div>
                     <div class="field image">
                         <label for="">Select Image</label>
@@ -44,6 +43,11 @@
                 </form>
             </section> 
     </div>
+    <style>
+        <?php
+        include "style.css";
+        ?>
+    </style>
     <script src="javascript/pass-show-hide.js"></script>
     <script src="javascript/signup.js"></script>
 </body>

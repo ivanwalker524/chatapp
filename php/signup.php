@@ -28,7 +28,7 @@ if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password)){
             $img_ext = end($img_explode); //here we get the extension of an user uploaded img file
 
             $extensions = ['png','jpng','jpg', 'JPG'];//these are some valid img ext and we've store them in array
-            if(in_array($img_ext,$extensions) === true){//if user uploaded img ext is matched wieth any array extensions
+            if(in_array($img_ext,$extensions) === true){//if user uploaded img ext is matched with any array extensions
                 $time = time(); //this will return us current time...
                                 //We need this time because when you uploading user img to in our folfder we rename user file with current time
                                 //so all the image file will have a unique name
@@ -47,7 +47,7 @@ if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password)){
                     $sql3 = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email'");
                     if(mysqli_num_rows($sql3) > 0){
                         $row = mysqli_fetch_assoc($sql3);
-                        $_SESSION['unique_id'] = $row['unique_id']; //using tis session we used user unique_id in other php file
+                        $_SESSION['unique_id'] = $row['unique_id']; //using this session we used user unique_id in other php file
                         echo "success";
                     }
                 }else{

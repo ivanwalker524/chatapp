@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML SKELETON</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 70px 0;
+            background-color: #4a826f;
+        }
+        section{
+            width: 860px;
+            height: 300px;
+            background: whitesmoke;
+            box-shadow: 0 0 13px 0 #0000004d,
+                        0 3px 5px 0 #00000080;
+        }
+       
+        .header-nav{
+            height: 100px;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        nav ul li{
+            margin: 40px 0;
+            padding: 0 14px;
+        }
+        nav ul li a{
+            background: #b1b1b1;
+            padding: 0 45px;
+            border-radius: 10px;
+            text-decoration: none;
+            position: relative;
+            right: -30px;
+          
+        }
+        .active{
+            width: 180px;
+            height: 100px;
+            left: -45px;
+            top: -40px;
+            background:#e6e5e5;
+            position: relative;
+           
+        }
+        .active a{
+            background-color: #d96004;
+            position: relative;
+            bottom: -40px;
+            z-index: 1;
+        }
+        .border{
+            border: 2px solid #e6e5e5;
+            width: 100%;
+        }
+        .flex{
+            width:70% ;
+            height: 20%;
+            position: relative;
+            
+        }
+        
+        .position{
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 4px;
+            width: 620px;
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            background-color: #e6e5e5;
+            position: relative;
+            
+        }
+        .div_flex{
+            position: relative;
+            margin: 20px 0;
+            padding: 0 10px;
+        }
+        .one{
+            width: 145px;
+            color: white;
+            padding: 5px;
+            margin: 10px 5px;
+            margin-left: 20px;
+            background-color: #b1b1b1;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+        <header class="header-nav">
+            <nav>
+                <ul>
+                    <li class="active"><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="border"></div>
+        <div class="flex">
+            <div class="position">
+                <div class="div_flex">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                </div>
+                <div class="div_flex">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                </div>
+                <div class="div_flex">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

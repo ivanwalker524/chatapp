@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>100 Days Challenge</title>
+        <style>
+            * {
+                margin: 0;
+            }
+            .main {
+                border: 2px solid #fff;
+                box-shadow: 0 0 7px #ccc;
+                background-image: linear-gradient(45deg, #463b97, #60bcc0);
+                height: 350px;
+                width: 400px;
+                margin: 50px auto;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            ._100 {
+                position: relative;
+                height: 150px;
+            }
+            ._100 .one div:nth-child(2) {
+                background-color: #fff;
+                position: absolute;
+                height: 96%;
+                width: 33px;
+                left: 52px;
+                top: 20px;
+                border-radius: 5px;
+                z-index: 2;
+                box-shadow: 5px 2px 6px -5px #555;
+            }
+            ._100 .one div:nth-child(1) {
+                background-color: #fff;
+                position: absolute;
+                height: 69px;
+                width: 33px;
+                left: 30px;
+                top: 25px;
+                transform: rotate(37deg);
+                border-radius: 5px;
+            }
+            .zero {
+                width: 70px;
+                aspect-ratio: 1;
+                position: absolute;
+                top: 23px;
+                border: 35px solid #fff;
+                border-radius: 100%;
+                box-shadow: 0 1px 7px #555;
+            }
+            .zero._1 {
+                left: 77px;
+                z-index: 1;
+            }
+            .zero._2 {
+                left: 200px;
+            }
+            .days{
+                color: #fff;
+                position: relative;
+                left: 50px;
+                top: 10px;
+            }
+            .days h1{
+                font-size: 6.6rem;
+            }
+            p{
+                color: #fff;
+                font-size: 1.8rem;
+                letter-spacing: 1.7px;
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="_100">
+                <div class="one">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="zero _1">
+                    <div></div>
+                </div>
+                <div class="zero _2">
+                    <div></div>
+                </div>
+            </div>
+            <div class="days">
+                <h1>DAYS</h1>
+           
+                <P>CSS CHALLENGE</P> 
+            </div>
+        </div>
+    </body>
+</html>
